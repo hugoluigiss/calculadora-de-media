@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --cor-laraja: #FF9737;
+    --cor-fundo: #DFDFDF;
+    --cor-cinza-escuro: #504F4F;
+    --cor-branca: #ffffff;
+    
+}
+
+
+
+.botaoMenu{
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+    background-color: var(--cor-laraja) ;
+    border: none;
+    display: none;
+}
+
+.botaoFechar{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    
+}
+
+#iconeMenu{
+   font-size: 50px;
+   color: var(--cor-cinza-escuro);
+   display: none;
+   
+}
+
+#iconeFechar{
+font-size: 40px;
+   color: var(--cor-laraja);
+   margin-right: 50px;
+   transition: 0.7s;
+   
+}
+
+#iconeFechar:hover {
+    transform: rotate(0.7turn);
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 50%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
+    transform: translate(-100%);
+    transition: 0.7s;
+}
+
+.mostrarMenu{
+    transform: translate(0);
+}
+
+.sideBarCabecalho{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.sideBarCabecalho img{
+    height: 100px;
+
+}
+
+.listaMenu {
+    list-style: none;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.listaMenu a{
+    margin-bottom: 30px;
+    
+}
+
+.listaMenu a {
+    color: var(--cor-cinza-escuro);
+}
+
+
+
+
+
+/*INICIO DO MODAL*/
+
+
+@media screen and (max-width:980px) {
+
+    .container-navegacao{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-principal-box1{
+        margin-top: 0;
+    }
+
+    .menu-principal-box2{
+        display: none;
+    }
+
+
+    #iconeMenu, .botaoMenu{
+        
+        display: initial;
+        color: var(--cor-cinza-escuro);
+     }
+
+     aside{
+        width: 70%;
+     }
+
+     .listaRedes img{
+        height: 50px;
+        margin-left: 10px;
+     }
+  
+
+    .logoCapa img{
+        margin-top: 150px;
+       height: 400px;
+    
+        
+    }
+}

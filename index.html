@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menuResponsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/Logo Branco.png">    
+    <title>Ferramentas do Trader</title>
+</head>
+
+<body>
+
+      <!--Inicio do SideBar-->
+
+    <aside>
+        <div class="sideBarCabecalho">
+            <img src="" alt="">
+            <button class="botaoFechar">
+                <i id="iconeFechar" class = 'fas fa-times'></i>
+            </button>
+        </div>
+
+        <div class="listaMenu">
+            <a href="https://www.hugoluigi.com.br/">Site Oficial</a>
+            <a href="https://www.youtube.com/channel/UClbs8IoLNL2fjFd61t0TZSw">Youtube</a>
+            <a href="https://www.instagram.com/hugo_luigiss/">Instagram</a>
+            <a href="https://t.me/+3dyaLDVb_e1lYzZh">Telegram</a>
+            <a href="https://www.hugoluigi.com.br/criptoespecialista">Cripto Especialista 1.0 </a>
+        </div>
+       
+    </aside>
+
+        <!--Fim do SideBar-->
+
+    <header class="container-navegacao">
+        <div class="menu-principal-box1">
+        <img src="/img/Logo Branco.png" alt="Logo Hugo Luigi">
+        <p>Hugo Luigi</p>
+        </div>
+        <div class="menu-principal-box2">
+            <a href="https://www.hugoluigi.com.br/">Site Oficial</a>
+            <a href="https://www.youtube.com/channel/UClbs8IoLNL2fjFd61t0TZSw">Youtube</a>
+            <a href="https://www.instagram.com/hugo_luigiss/">Instagram</a>
+            <a href="https://t.me/+3dyaLDVb_e1lYzZh">Telegram</a>
+            <a href="https://www.hugoluigi.com.br/criptoespecialista">Cripto Especialista 1.0 </a>
+            
+        </div>
+        
+        <button class="botaoMenu">    
+            <i id="iconeMenu" class="fa fa-bars"></i> 
+        </button>
+        
+    </header>
+
+    <section class="container-faixa1">
+        <div class="faixa1-box1">
+            <h1>CALCULE O VALOR MÉDIO
+                DAS ENTRADAS DO SEU
+                ATIVO.
+            </h1>
+            <p>
+                Ferramenta gratuita desenvolvida para auxiliar no acompanhamento
+                de operações com criptomoedas. Ferramenta criada por 4set.io em 
+                parceria com Hugo Luigi.
+            </p>
+        </div>
+
+        <div class="faixa1-box2">
+            <img src="/img/logo cinza.png" alt="Logo B Hugo Luigi">
+        </div>
+    </section>
+
+    <section class="faixa2-central">
+    </section>
+
+    <section class="indicadorSentimento">
+        <h2>Analise de sentimento do mercado:</h2>
+        <img src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
+    </section>
+
+    <form   id="form1" class="form-geral">
+
+    
+        <div class="perguntaEntrada" >
+            <label for="entrada1">Qual o em dolar da sua entrada 1 ?</label>
+            <input id="entrada1" type="text" name="entradas" pattern="^\d*\.?\d*$" title="Apenas é permitido o uso de números e ponto" required> 
+        </div>
+    
+            <label for="preco1">Qual o preço do ativo na entrada 1 ?</label>
+            <input id="preco1" type="text" name="precos" pattern="^\d*\.?\d*$" title="Apenas é permitido o uso de números e ponto" required> 
+            <label for="quantidade1">Qual a quantidade de moedas na entrada 1 ?</label>
+            <input id="quantidade1" type="text" name="quantidades" pattern="^\d*\.?\d*$" title="Apenas é permitido o uso de números e ponto" required> 
+            
+            <div class="linha">
+                
+            </div>
+
+        <div id="boxAdicionados" class="perguntaEntrada" >
+
+        </div>
+
+        <button id="add" class="add">"+" Nova Entrada</button>
+        <button id="button" class="botao-calcular" type="submit" form="form1">Calcular</button>
+        
+    </form>
+
+
+    <section id="resultado" class="resultado-final">
+        <h1 id="resultadoh1"></h1>
+    </section>
+
+    <footer class="rodape">
+        <p class="rodape-descricao">Criado por 4set.io</p>
+    </footer>
+
+
+    <script src="/js/main.js"></script>
+    <script src="/js/criaElementos.js"></script>
+    <script src="https://kit.fontawesome.com/9350a43479.js" crossorigin="anonymous"></script>
+    <script src="/js/menuresponsivo.js"></script>
+
+</body>
+
+</html>
