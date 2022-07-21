@@ -2,7 +2,7 @@
 function createLabelEntrada() {
     let elemento = document.createElement('label');
     elemento.setAttribute('for', 'entrada' + contador);
-    elemento.textContent = 'Qual o valor da sua entrada ' + contador + ' ?';
+    elemento.textContent = 'Qual o valor em dolar da sua entrada ' + contador + ' ?';
     boxAdicionados.appendChild(elemento);
 }
 
