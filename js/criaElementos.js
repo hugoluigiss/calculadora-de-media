@@ -38,7 +38,7 @@ function createInputPreco() {
 function createLabelQuantidade() {
     let elemento = document.createElement('label');
     elemento.setAttribute('for', 'preco' + contador);
-    elemento.textContent = 'Qual a quantidade da sua entrada ' + contador + ' ?';
+    elemento.textContent = 'Qual a quantidade adquirida de moedas da sua entrada ' + contador + ' ?';
     boxAdicionados.appendChild(elemento);
 }
 

@@ -141,11 +141,18 @@ header{
 
 }
 
+.tituloCalculadora{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 48px;
+    color: var(--cor-cinza-escuro);
+}
+
 .form-geral{
     display: flex;
     flex-direction: column;
     padding: 0 100px;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -153,6 +160,7 @@ header{
     display: flex;
     flex-direction: column;
 }
+
 
 .form-geral label{
     font-size: 26px;
